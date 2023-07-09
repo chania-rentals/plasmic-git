@@ -40,6 +40,8 @@ import {
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_visitors_css from "../visitors/plasmic_visitors.module.css"; // plasmic-import: w4yYo48qoeavp6MLu5USrX/projectcss
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
+import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_blank_website.module.css"; // plasmic-import: DFSgDk7xEF4uDtL4KTuii/projectcss
 import sty from "./PlasmicFaqs.module.css"; // plasmic-import: jJomJF1Hmf/css
 
@@ -54,7 +56,7 @@ export const PlasmicFaqs__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFaqs__OverridesType = {
   root?: p.Flex<"div">;
-  text?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
 };
 
 export interface DefaultFaqsProps {}
@@ -119,22 +121,87 @@ function PlasmicFaqs__RenderFunc(props: {
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_visitors_css.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
+            plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
+          <h1
+            data-plasmic-name={"h1"}
+            data-plasmic-override={overrides.h1}
             className={classNames(
               projectcss.all,
+              projectcss.h1,
               projectcss.__wab_text,
-              sty.text
+              sty.h1
             )}
           >
-            {
-              "Frequently asked questions\nHow can I choose the right villa for me?\nThere are villas for all tastes and budgets. The first step is to think what you need. Who are you travelling with? Do you want to explore the island, or you need relaxation and isolation? Do you wish to be near the sea or inland? Will you rent a car? What kind of villa you prefer; modern or traditional? The best way to choose is to let us know what you need and we will help you find the perfect villa for you!\nDo I share the villa with other guests?\nAll our villas are private and you will be the only tenants in the property.\nIs there flexibility with changeover days?\nThe changeover days depend on the owners or the existing bookings. If you like a particular villa, please ask us for its changeover days.\nIs there a minimum night stay?\nGenerally, the minimum stay is 5 nights during low season and 7 nights during high season. However, some owners may accept a shorter stay, depending on the season, the proximity to the arrival day and the existing bookings. Please send us your dates and we will send you our options.\nWhat time can I check-in on my arrival day?\nThe official check-in time for most villas is 15:00 (please check the check-in and check-out time in each description page). However, depending on the previous booking, an early check-in may be possible; we will know near your arrival day.\nIs it possible to arrive very late?\nYou can check-in any time, even after midnight. Sometimes, in case of a late arrival, the owner will not be there. You will find the keys at a place that the owner will indicate and he will be available on phone if you need anything on arrival.\nWhat time do I have to vacate the villa on my last day?\nThe official check-out time for most villas is 11:00 (please check the check-in and check-out time in each description page). However, depending on the next booking, a late check-out may be possible; we will know near your departure day.\nAre pets allowed?\nNo, pets are not allowed in any of the villas.\nAre events allowed?\nEvents are not allowed in any of the villas.\nHow do I get to the villa and where do I find the keys to the property?\nAfter the payment you will have access at a page on our site with all the details of your booking. From this page you will be able to download detailed directions to your villa. The owner will be waiting for you at the villa at the time that you will indicate on your reservation page. In the rare case when the owner will not be able to be at the villa at your arrival, we will inform you sooner about the check-in procedure.\nCan I have groceries in the villa on arrival?\nYou can send us a list with groceries for the first night and morning and the owner will purchase them for you. Most of the owners provide a welcome pack with traditional or seasonal products but usually they do not have a standard content.\nAre linen and towels provided?\nLinen and bath towels are provided to all villas. Most villas also provide pool towels \u2013 you have to check the facilities of each individual villa. Beach towels are not provided.\nIs the cleaning included in the price?\nCleaning service \u2013 including change of linen and bath towels \u2013 is included in the price. The service is provided once or twice per week, depending on the villa. You will find more info in the description pages.\nWhat do I do with my rubbish at the property?\nUsually there are bins near the villas; clients are expected to take their rubbish at the in the bins. Please ask the owner on arrival where is the nearest to your villa bin.\nIf I encounter a problem at the property, who do I call?\nThe owner will be always at your disposal, 24/7. If you cannot find the owner, you may call us or send us an email and we will reply as soon as possible.\nAre there any hidden fees?\nNo, there are no hidden fees. Through our site you book without booking or service fee.\nIs it possible to include additional guests later?\nYes, as long as you are not more than the maximum number of persons that the villa can accommodate. If there is an extra charge per night per guests, it will be added at the rental cost. Keep in mind that we always need to know the final number of guests before your arrival.\nIs a security deposit required?\nA security deposit is not required. However, guests are responsible for any loss or damage caused to the property or its contents. Guests are required to report any damage to the owner and to bear the cost of repair or replacement.\nHow is the payment done?\nTo secure the booking a deposit is required, usually a 25% of the total price. You will find the required deposit amount in each description page. The payment can be made either with credit card online through our site or by bank transfer. When you decide to proceed to the booking of a villa you must send us a confirmation page and we will activate the payment form.\nWill you send me a reminder when the balance is due?\nUnfortunately our automated reminder system is not ready yet. If you want in advance, you must contact us at least 22 days before your arrival for the bank account details."
-            }
-          </div>
+            {"Frequently asked questions"}
+          </h1>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__yuUt)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__jk6Oq)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___3P7OK
+                  )}
+                >
+                  {"How can I choose the right villa for me?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__fuXk9
+                  )}
+                >
+                  {
+                    "There are villas for all tastes and budgets. The first step is to think what you need. Who are you travelling with? Do you want to explore the island, or you need relaxation and isolation? Do you wish to be near the sea or inland? Will you rent a car? What kind of villa you prefer; modern or traditional? The best way to choose is to let us know what you need and we will help you find the perfect villa for you!"
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__gSLx)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__rtUdB
+                  )}
+                >
+                  {"How can I choose the right villa for me?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___16Sue
+                  )}
+                >
+                  {
+                    "There are villas for all tastes and budgets. The first step is to think what you need. Who are you travelling with? Do you want to explore the island, or you need relaxation and isolation? Do you wish to be near the sea or inland? Will you rent a car? What kind of villa you prefer; modern or traditional? The best way to choose is to let us know what you need and we will help you find the perfect villa for you!"
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -142,15 +209,15 @@ function PlasmicFaqs__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "h1"],
+  h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  text: "div";
+  h1: "h1";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -213,7 +280,7 @@ export const PlasmicFaqs = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicFaqs
     internalVariantProps: PlasmicFaqs__VariantProps,
