@@ -1,0 +1,573 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": "3.16.0",
+      "cssFilePath": "plasmic/react_slick/plasmic_react_slick.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "Slider",
+          "displayName": "hostless-slider",
+          "componentImportPath": "react-slick"
+        }
+      ]
+    },
+    {
+      "projectId": "w4yYo48qoeavp6MLu5USrX",
+      "projectApiToken": "kMe3qJDY2R9x3hhMTapBzThyVYn4J1K5iQffVfa01zkNYcImuwK53HpeWKbzzgH0gYsLFYZCm00NTHnJGYg",
+      "projectName": "Visitors",
+      "version": "7.0.0",
+      "cssFilePath": "plasmic/visitors/plasmic_visitors.module.css",
+      "components": [
+        {
+          "id": "ARLYiymc0z",
+          "name": "RecommendedVillas",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicRecommendedVillas.tsx",
+          "importSpec": {
+            "modulePath": "RecommendedVillas.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicRecommendedVillas.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "0IzuBeOqFX",
+          "name": "ExtraServices",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicExtraServices.tsx",
+          "importSpec": {
+            "modulePath": "ExtraServices.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicExtraServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "vwSSb6HVzl",
+          "name": "VillaListing",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicVillaListing.tsx",
+          "importSpec": {
+            "modulePath": "VillaListing.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicVillaListing.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "P-5iDZlX3x",
+          "name": "HomeSlide",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicHomeSlide.tsx",
+          "importSpec": {
+            "modulePath": "HomeSlide.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicHomeSlide.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "UObRc65WjB",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NMGxQxLJ6HL",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "w4yYo48qoeavp6MLu5USrX",
+          "renderModuleFilePath": "plasmic/visitors/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/visitors/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        }
+      ],
+      "icons": [
+        {
+          "id": "EJGVF0fbYm",
+          "name": "IconBedIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconBed.tsx"
+        },
+        {
+          "id": "caRC1ivz9t",
+          "name": "IconUserFriendsIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconUserFriends.tsx"
+        },
+        {
+          "id": "NyU6wO6Svu",
+          "name": "IconShowerIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconShower.tsx"
+        },
+        {
+          "id": "LIGOAN9qik",
+          "name": "IconWiFiIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconWiFi.tsx"
+        },
+        {
+          "id": "iHNoxRcorC",
+          "name": "IconSwimmingPoolIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconSwimmingPool.tsx"
+        },
+        {
+          "id": "Nm0JLxPHf",
+          "name": "IconBed2Icon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconBed2.tsx"
+        },
+        {
+          "id": "RUbUIIKr-7",
+          "name": "IconUserFriends2Icon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconUserFriends2.tsx"
+        },
+        {
+          "id": "krOlpVj1xW",
+          "name": "IconShower2Icon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconShower2.tsx"
+        },
+        {
+          "id": "w-NyHY6hyf",
+          "name": "IconWiFi2Icon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconWiFi2.tsx"
+        },
+        {
+          "id": "FBo7qokeMH",
+          "name": "IconSwimmingPool2Icon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconSwimmingPool2.tsx"
+        },
+        {
+          "id": "evxzZ8huz8",
+          "name": "IconAlternateCarIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__IconAlternateCar.tsx"
+        },
+        {
+          "id": "onHQc91Mg6",
+          "name": "EmailSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__EmailSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "yAoZ9AuYUh",
+          "name": "PaperPlaneSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__PaperPlaneSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "HwG5E-iOUD",
+          "name": "PhoneSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__PhoneSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "jaIB-YqsC2f",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "sveTryCrlGn",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/visitors/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "E89o63lR4",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws 1",
+          "filePath": "../public/plasmic/visitors/images/httpsChaniaRentalsStatics3EuWest2Amazonaws1.jpg"
+        },
+        {
+          "id": "ZHqYRjUXQ0",
+          "name": "mainImage",
+          "filePath": "../public/plasmic/visitors/images/mainImage.jpg"
+        },
+        {
+          "id": "bLUKnd7l8o",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws 4",
+          "filePath": "../public/plasmic/visitors/images/httpsChaniaRentalsStatics3EuWest2Amazonaws4.jpg"
+        },
+        {
+          "id": "WGlYzgsOO",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_images_beetle 1",
+          "filePath": "../public/plasmic/visitors/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomImagesBeetle1.png"
+        },
+        {
+          "id": "Hy77PUJ42t",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_images_beetle 2",
+          "filePath": "../public/plasmic/visitors/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomImagesBeetle2.png"
+        },
+        {
+          "id": "aUUYB8RTh",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_villas_aquila-villa_slides-full_Aquila-Villa(1).jpg",
+          "filePath": "../public/plasmic/visitors/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomVillasAquilaVillaSlidesFullAquilaVilla1Jpg.jpg"
+        }
+      ],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "FbCjBqOPeEanyn",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "54VuA_p7PRlRSj",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "g6SWqEwrb6",
+          "name": "Compg6SWqEwrb6",
+          "displayName": "HelloWorld",
+          "componentImportPath": ""
+        },
+        {
+          "id": "vGazgSBNKk",
+          "name": "HomeCarousel",
+          "displayName": "HomeCarousel",
+          "componentImportPath": "@/components/HomeCarousel"
+        }
+      ]
+    },
+    {
+      "projectId": "DFSgDk7xEF4uDtL4KTuii",
+      "projectApiToken": "DU2cElx7f2uvSouoJAd5LZ2Mv2q7PfgqjqZ3ywSm7c9I23KEg5oz5oEK29Iye5eFMYaKRR22EodCg86As65Bw",
+      "projectName": "Blank website",
+      "version": "latest",
+      "cssFilePath": "plasmic/blank_website/plasmic_blank_website.module.css",
+      "components": [
+        {
+          "id": "06lHMdcXhq",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "6XOlJuwr_I",
+          "name": "ExtraServices",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicExtraServices.tsx",
+          "importSpec": {
+            "modulePath": "ExtraServices.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicExtraServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZBhwsxC3jh",
+          "name": "RecommendedVillas",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.tsx",
+          "importSpec": {
+            "modulePath": "RecommendedVillas.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TIB8lH87Th",
+          "name": "HomeSlide",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicHomeSlide.tsx",
+          "importSpec": {
+            "modulePath": "HomeSlide.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicHomeSlide.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ahCe1JIbpTo",
+          "name": "Footer2",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicFooter2.tsx",
+          "importSpec": {
+            "modulePath": "Footer2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicFooter2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "nSt5TCeTKDE",
+          "name": "ExtraServices2",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicExtraServices2.tsx",
+          "importSpec": {
+            "modulePath": "ExtraServices2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicExtraServices2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "HBIlN8IHFlq",
+          "name": "RecommendedVillas2",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicRecommendedVillas2.tsx",
+          "importSpec": {
+            "modulePath": "RecommendedVillas2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicRecommendedVillas2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wtJWL5MKRdX",
+          "name": "HomeSlide2",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicHomeSlide2.tsx",
+          "importSpec": {
+            "modulePath": "HomeSlide2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicHomeSlide2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ckOVr1XW9X",
+          "name": "VillaListing",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing.tsx",
+          "importSpec": {
+            "modulePath": "VillaListing.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "3Hl0KWOcfg",
+          "name": "VillaListing2",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing2.tsx",
+          "importSpec": {
+            "modulePath": "VillaListing2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "mfkTZPVpA-",
+          "name": "HowToBook",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicHowToBook.tsx",
+          "importSpec": {
+            "modulePath": "../pages/how-to-book.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicHowToBook.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "jJomJF1Hmf",
+          "name": "Faqs",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicFaqs.tsx",
+          "importSpec": {
+            "modulePath": "../pages/faqs.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicFaqs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "6Hg4UVKwGM",
+          "name": "Index",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicIndex.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index/index.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicIndex.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "4IYytJcVf3",
+          "name": "VillaListing3",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing3.tsx",
+          "importSpec": {
+            "modulePath": "VillaListing3.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "wBPThB11rLD",
+          "name": "PaperPlaneSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__PaperPlaneSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "vQL0a9Pgx6p",
+          "name": "EmailSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__EmailSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "fD3byLmk8P8",
+          "name": "PhoneSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__PhoneSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "eZjCYdllgxn",
+          "name": "IconBedIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconBed.tsx"
+        },
+        {
+          "id": "9sEL3AEFEMB",
+          "name": "IconUserFriendsIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconUserFriends.tsx"
+        },
+        {
+          "id": "KE3xblY27XH",
+          "name": "IconShowerIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconShower.tsx"
+        },
+        {
+          "id": "glh44mfmuWC",
+          "name": "IconWiFiIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconWiFi.tsx"
+        },
+        {
+          "id": "flYiRJ8GTg3",
+          "name": "IconSwimmingPoolIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconSwimmingPool.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "BTcfpAeBhAg",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_images_beetle 1",
+          "filePath": "../public/plasmic/blank_website/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomImagesBeetle1.png"
+        },
+        {
+          "id": "ocfgD3Mwo4n",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_images_beetle 2",
+          "filePath": "../public/plasmic/blank_website/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomImagesBeetle2.png"
+        },
+        {
+          "id": "HjQFXIVnxYQ",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws 1",
+          "filePath": "../public/plasmic/blank_website/images/httpsChaniaRentalsStatics3EuWest2Amazonaws1.jpg"
+        },
+        {
+          "id": "8eOKu6oS-M0",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws.com_villas_aquila-villa_slides-full_Aquila-Villa(1).jpg",
+          "filePath": "../public/plasmic/blank_website/images/httpsChaniaRentalsStatics3EuWest2AmazonawscomVillasAquilaVillaSlidesFullAquilaVilla1Jpg.jpg"
+        },
+        {
+          "id": "FY2ssafR8Pe",
+          "name": "https___chania-rentals-static.s3.eu-west-2.amazonaws 4",
+          "filePath": "../public/plasmic/blank_website/images/httpsChaniaRentalsStatics3EuWest2Amazonaws4.jpg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CXw6YoRYlPz8",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "-a8dzHVy0TV3",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "793qbDbnmqZPDb",
+        "name": "Screen",
+        "projectId": "w4yYo48qoeavp6MLu5USrX",
+        "contextFilePath": "plasmic/visitors/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "KPUco5Gf8Gxk",
+        "name": "Screen",
+        "projectId": "DFSgDk7xEF4uDtL4KTuii",
+        "contextFilePath": "plasmic/blank_website/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.295",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.295/dist/plasmic.schema.json"
+}
