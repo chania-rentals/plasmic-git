@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -39,7 +39,8 @@
           "displayName": "hostless-slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "w4yYo48qoeavp6MLu5USrX",
@@ -269,7 +270,8 @@
           "displayName": "HomeCarousel",
           "componentImportPath": "@/components/HomeCarousel"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "DFSgDk7xEF4uDtL4KTuii",
@@ -278,136 +280,6 @@
       "version": "latest",
       "cssFilePath": "plasmic/blank_website/plasmic_blank_website.module.css",
       "components": [
-        {
-          "id": "06lHMdcXhq",
-          "name": "Footer",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicFooter.tsx",
-          "importSpec": {
-            "modulePath": "Footer.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicFooter.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "6XOlJuwr_I",
-          "name": "ExtraServices",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicExtraServices.tsx",
-          "importSpec": {
-            "modulePath": "ExtraServices.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicExtraServices.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "ZBhwsxC3jh",
-          "name": "RecommendedVillas",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.tsx",
-          "importSpec": {
-            "modulePath": "RecommendedVillas.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "TIB8lH87Th",
-          "name": "HomeSlide",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicHomeSlide.tsx",
-          "importSpec": {
-            "modulePath": "HomeSlide.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicHomeSlide.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "ahCe1JIbpTo",
-          "name": "Footer2",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicFooter2.tsx",
-          "importSpec": {
-            "modulePath": "Footer2.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicFooter2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "nSt5TCeTKDE",
-          "name": "ExtraServices2",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicExtraServices2.tsx",
-          "importSpec": {
-            "modulePath": "ExtraServices2.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicExtraServices2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "HBIlN8IHFlq",
-          "name": "RecommendedVillas2",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicRecommendedVillas2.tsx",
-          "importSpec": {
-            "modulePath": "RecommendedVillas2.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicRecommendedVillas2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "wtJWL5MKRdX",
-          "name": "HomeSlide2",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicHomeSlide2.tsx",
-          "importSpec": {
-            "modulePath": "HomeSlide2.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicHomeSlide2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "ckOVr1XW9X",
-          "name": "VillaListing",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing.tsx",
-          "importSpec": {
-            "modulePath": "VillaListing.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "3Hl0KWOcfg",
-          "name": "VillaListing2",
-          "type": "managed",
-          "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing2.tsx",
-          "importSpec": {
-            "modulePath": "VillaListing2.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing2.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
         {
           "id": "mfkTZPVpA-",
           "name": "HowToBook",
@@ -448,15 +320,67 @@
           "componentType": "page"
         },
         {
-          "id": "4IYytJcVf3",
-          "name": "VillaListing3",
+          "id": "ahCe1JIbpTo",
+          "name": "Footer",
           "type": "managed",
           "projectId": "DFSgDk7xEF4uDtL4KTuii",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing3.tsx",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicFooter.tsx",
           "importSpec": {
-            "modulePath": "VillaListing3.tsx"
+            "modulePath": "Footer.tsx"
           },
-          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing3.module.css",
+          "cssFilePath": "plasmic/blank_website/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "nSt5TCeTKDE",
+          "name": "ExtraServices",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicExtraServices.tsx",
+          "importSpec": {
+            "modulePath": "ExtraServices.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicExtraServices.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "HBIlN8IHFlq",
+          "name": "RecommendedVillas",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.tsx",
+          "importSpec": {
+            "modulePath": "RecommendedVillas.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicRecommendedVillas.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wtJWL5MKRdX",
+          "name": "HomeSlide",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicHomeSlide.tsx",
+          "importSpec": {
+            "modulePath": "HomeSlide.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicHomeSlide.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "4IYytJcVf3",
+          "name": "VillaListing",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicVillaListing.tsx",
+          "importSpec": {
+            "modulePath": "VillaListing.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicVillaListing.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
