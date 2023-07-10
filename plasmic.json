@@ -468,6 +468,12 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "qqFdwPcNt8",
+          "name": "HomeCarousel",
+          "displayName": "HomeCarousel",
+          "componentImportPath": "@/components/HomeCarousel"
         }
       ]
     },
@@ -511,7 +517,8 @@
           "displayName": "hostless-rich-list",
           "componentImportPath": "@plasmicpkgs/plasmic-rich-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -723,7 +730,8 @@
           "displayName": "plasmic-antd5-date-picker",
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerDatePicker"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

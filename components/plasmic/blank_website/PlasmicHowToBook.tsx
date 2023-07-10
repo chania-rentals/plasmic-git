@@ -56,7 +56,7 @@ export const PlasmicHowToBook__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHowToBook__OverridesType = {
   root?: p.Flex<"div">;
-  text?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
 };
 
 export interface DefaultHowToBookProps {}
@@ -100,7 +100,35 @@ function PlasmicHowToBook__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicHowToBook.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicHowToBook.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicHowToBook.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicHowToBook.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHowToBook.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHowToBook.pageMetadata.description}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -126,19 +154,169 @@ function PlasmicHowToBook__RenderFunc(props: {
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
+          <h1
+            data-plasmic-name={"h1"}
+            data-plasmic-override={overrides.h1}
             className={classNames(
               projectcss.all,
+              projectcss.h1,
               projectcss.__wab_text,
-              sty.text
+              sty.h1
             )}
           >
-            {
-              "How to book\nFind your dream villa\nSearch our site for the ideal villa for you. You will find villas for all tastes and budgets. If you have some specific requirements - view, proximity to amenities etc. - you can either complete the Contact Us form or send us an email directly at our email address info@chania-rentals.com and we will send you our best options for you!\n\nSecure your reservation\nOnce you find the perfect villa for you you must secure the booking. On the description page of each villa it is mentioned the required deposit amount. The payment can be made either with credit card online thorugh our site or by bank transfer. To avoid double-bookings and misunderstandings, we always want to check the booking requests before the payment, so there is not a payment form. You have to confirm your interest sending us an email and we will activate the payment form so you can proceed.\n\nCheck your booking\nAfter the payment - immediately if you pay with credit card or after we receive the payment if you choose the bank transfer - you will have access to a page on our site with all the details of your booking. From this page you will be able to download driving directions to the villa. On the same page, you will have to complete your arrival details at least 15 days before your arrival, as the villa owner needs to organize your arrival.\n\nComplete the payment\nOn the description page of each villa you will find the balance payment methods. In case you prefer to pay prior your arrival, please contact us a couple of days before the payment due day.\n\nGet ready for your trip\nBefore you leave home, be sure that you have downloaded the driving directions that you will find on your reservation page on our site. The owner's contact number and the coordinates of the villa are also written in this document. Please also check that you have competed all fields on your reservation page, as the owner needs to know your arrival information so he can be at the villa on your arrival. Last but not least, make sure that your good mood is on your bag!"
-            }
-          </div>
+            {"How to book"}
+          </h1>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__v2Hg5)}
+          >
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__eziFn)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__yKeqc
+                  )}
+                >
+                  {"Find your dream villa"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___15Tu3
+                  )}
+                >
+                  {
+                    "Search our site for the ideal villa for you. You will find villas for all tastes and budgets. If you have some specific requirements - view, proximity to amenities etc. - you can either complete the Contact Us form or send us an email directly at our email address info@chania-rentals.com and we will send you our best options for you!"
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ako52)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__e7Nl
+                  )}
+                >
+                  {"Secure your reservation"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ejwIc
+                  )}
+                >
+                  {
+                    "Once you find the perfect villa for you you must secure the booking. On the description page of each villa it is mentioned the required deposit amount. The payment can be made either with credit card online thorugh our site or by bank transfer. To avoid double-bookings and misunderstandings, we always want to check the booking requests before the payment, so there is not a payment form. You have to confirm your interest sending us an email and we will activate the payment form so you can proceed."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__yzc5D)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__dvor7
+                  )}
+                >
+                  {"Check your booking"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__cJHxC
+                  )}
+                >
+                  {
+                    "After the payment - immediately if you pay with credit card or after we receive the payment if you choose the bank transfer - you will have access to a page on our site with all the details of your booking. From this page you will be able to download driving directions to the villa. On the same page, you will have to complete your arrival details at least 15 days before your arrival, as the villa owner needs to organize your arrival."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__iWbzQ)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__liHwN
+                  )}
+                >
+                  {"Complete the payment"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kQhJv
+                  )}
+                >
+                  {
+                    "On the description page of each villa you will find the balance payment methods. In case you prefer to pay prior your arrival, please contact us a couple of days before the payment due day."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wzWjD)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__j914L
+                  )}
+                >
+                  {"Get ready for your trip"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__jMdBy
+                  )}
+                >
+                  {
+                    "Before you leave home, be sure that you have downloaded the driving directions that you will find on your reservation page on our site. The owner's contact number and the coordinates of the villa are also written in this document. Please also check that you have competed all fields on your reservation page, as the owner needs to know your arrival information so he can be at the villa on your arrival. Last but not least, make sure that your good mood is on your bag!"
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -146,15 +324,15 @@ function PlasmicHowToBook__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text"],
-  text: ["text"]
+  root: ["root", "h1"],
+  h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  text: "div";
+  h1: "h1";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -217,7 +395,7 @@ export const PlasmicHowToBook = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicHowToBook
     internalVariantProps: PlasmicHowToBook__VariantProps,
@@ -225,8 +403,9 @@ export const PlasmicHowToBook = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
+      title: "How To Book | Chania Rentals",
+      description:
+        "The best way to choose is to let us know what you need and we will help you find the perfect villa for you!",
       ogImageSrc: "",
       canonical: ""
     }

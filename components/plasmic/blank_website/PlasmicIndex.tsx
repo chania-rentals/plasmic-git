@@ -36,6 +36,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { HomeCarousel } from "@/components/HomeCarousel"; // plasmic-import: qqFdwPcNt8/codeComponent
+import RecommendedVillas from "../../RecommendedVillas"; // plasmic-import: HBIlN8IHFlq/component
+import ExtraServices from "../../ExtraServices"; // plasmic-import: nSt5TCeTKDE/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -56,6 +59,10 @@ export const PlasmicIndex__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicIndex__OverridesType = {
   root?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
+  homeCarousel?: p.Flex<typeof HomeCarousel>;
+  recommendedVillas?: p.Flex<typeof RecommendedVillas>;
+  extraServices?: p.Flex<typeof ExtraServices>;
 };
 
 export interface DefaultIndexProps {}
@@ -99,7 +106,35 @@ function PlasmicIndex__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicIndex.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicIndex.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicIndex.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicIndex.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicIndex.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicIndex.pageMetadata.description}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -124,20 +159,62 @@ function PlasmicIndex__RenderFunc(props: {
             plasmic_plasmic_rich_components_css.plasmic_tokens,
             sty.root
           )}
-        />
+        >
+          {true ? (
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              <HomeCarousel
+                data-plasmic-name={"homeCarousel"}
+                data-plasmic-override={overrides.homeCarousel}
+                className={classNames("__wab_instance", sty.homeCarousel)}
+              />
+
+              <RecommendedVillas
+                data-plasmic-name={"recommendedVillas"}
+                data-plasmic-override={overrides.recommendedVillas}
+                className={classNames("__wab_instance", sty.recommendedVillas)}
+              />
+
+              <ExtraServices
+                data-plasmic-name={"extraServices"}
+                data-plasmic-override={overrides.extraServices}
+                className={classNames("__wab_instance", sty.extraServices)}
+              />
+            </p.Stack>
+          ) : null}
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: [
+    "root",
+    "freeBox",
+    "homeCarousel",
+    "recommendedVillas",
+    "extraServices"
+  ],
+  freeBox: ["freeBox", "homeCarousel", "recommendedVillas", "extraServices"],
+  homeCarousel: ["homeCarousel"],
+  recommendedVillas: ["recommendedVillas"],
+  extraServices: ["extraServices"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
+  homeCarousel: typeof HomeCarousel;
+  recommendedVillas: typeof RecommendedVillas;
+  extraServices: typeof ExtraServices;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -200,6 +277,10 @@ export const PlasmicIndex = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
+    homeCarousel: makeNodeComponent("homeCarousel"),
+    recommendedVillas: makeNodeComponent("recommendedVillas"),
+    extraServices: makeNodeComponent("extraServices"),
 
     // Metadata about props expected for PlasmicIndex
     internalVariantProps: PlasmicIndex__VariantProps,
@@ -207,8 +288,9 @@ export const PlasmicIndex = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
+      title: "Home Page | Holiday villas in Chania, Crete. Book online!",
+      description:
+        "We hand-select every villa, scrutinising each one to ensure we are offering the best quality accommodation at an affordable price. We also make it our business to know the owners of each individual villa that is listed on our web site.",
       ogImageSrc: "",
       canonical: ""
     }

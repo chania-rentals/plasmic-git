@@ -36,6 +36,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import { HomeCarousel } from "@/components/HomeCarousel"; // plasmic-import: qqFdwPcNt8/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -57,6 +58,7 @@ export const PlasmicFaqs__ArgProps = new Array<ArgPropType>();
 export type PlasmicFaqs__OverridesType = {
   root?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
+  homeCarousel?: p.Flex<typeof HomeCarousel>;
 };
 
 export interface DefaultFaqsProps {}
@@ -100,7 +102,35 @@ function PlasmicFaqs__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicFaqs.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicFaqs.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicFaqs.pageMetadata.title}
+        />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicFaqs.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicFaqs.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicFaqs.pageMetadata.description}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -186,7 +216,7 @@ function PlasmicFaqs__RenderFunc(props: {
                     sty.h3__rtUdB
                   )}
                 >
-                  {"How can I choose the right villa for me?"}
+                  {"Do I share the villa with other guests?"}
                 </h3>
                 <div
                   className={classNames(
@@ -196,12 +226,537 @@ function PlasmicFaqs__RenderFunc(props: {
                   )}
                 >
                   {
-                    "There are villas for all tastes and budgets. The first step is to think what you need. Who are you travelling with? Do you want to explore the island, or you need relaxation and isolation? Do you wish to be near the sea or inland? Will you rent a car? What kind of villa you prefer; modern or traditional? The best way to choose is to let us know what you need and we will help you find the perfect villa for you!"
+                    "All our villas are private and you will be the only tenants in the property."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__m0Cno)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___1NTql
+                  )}
+                >
+                  {"Is there flexibility with changeover days?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__a51E
+                  )}
+                >
+                  {
+                    "The changeover days depend on the owners or the existing bookings. If you like a particular villa, please ask us for its changeover days."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__mNNr3)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__ttQve
+                  )}
+                >
+                  {"Is there a minimum night stay?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__slvgd
+                  )}
+                >
+                  {
+                    "Generally, the minimum stay is 5 nights during low season and 7 nights during high season. However, some owners may accept a shorter stay, depending on the season, the proximity to the arrival day and the existing bookings. Please send us your dates and we will send you our options."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__otJe4)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___6MqGd
+                  )}
+                >
+                  {"What time can I check-in on my arrival day?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ogIVa
+                  )}
+                >
+                  {
+                    "The official check-in time for most villas is 15:00 (please check the check-in and check-out time in each description page). However, depending on the previous booking, an early check-in may be possible; we will know near your arrival day."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__hEl2C)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__szdep
+                  )}
+                >
+                  {"Is it possible to arrive very late?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__fSdHv
+                  )}
+                >
+                  {
+                    "You can check-in any time, even after midnight. Sometimes, in case of a late arrival, the owner will not be there. You will find the keys at a place that the owner will indicate and he will be available on phone if you need anything on arrival."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__pUtU9)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__hjY2J
+                  )}
+                >
+                  {"What time do I have to vacate the villa on my last day?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xr8F4
+                  )}
+                >
+                  {
+                    "The official check-out time for most villas is 11:00 (please check the check-in and check-out time in each description page). However, depending on the next booking, a late check-out may be possible; we will know near your departure day."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wgSu2)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__jg7Lk
+                  )}
+                >
+                  {"Are pets allowed?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__dQb0Q
+                  )}
+                >
+                  {"No, pets are not allowed in any of the villas."}
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__rMje)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__a1Md4
+                  )}
+                >
+                  {"Are events allowed?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___6O64
+                  )}
+                >
+                  {"Events are not allowed in any of the villas."}
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__w7In4)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__m3P4I
+                  )}
+                >
+                  {
+                    "How do I get to the villa and where do I find the keys to the property?"
+                  }
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__kTyLb
+                  )}
+                >
+                  {
+                    "After the payment you will have access at a page on our site with all the details of your booking. From this page you will be able to download detailed directions to your villa. The owner will be waiting for you at the villa at the time that you will indicate on your reservation page. In the rare case when the owner will not be able to be at the villa at your arrival, we will inform you sooner about the check-in procedure."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__z2V8Z)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__mRzBl
+                  )}
+                >
+                  {"Can I have groceries in the villa on arrival?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__oRfD3
+                  )}
+                >
+                  {
+                    "You can send us a list with groceries for the first night and morning and the owner will purchase them for you. Most of the owners provide a welcome pack with traditional or seasonal products but usually they do not have a standard content."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__ji0U)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___0SjyS
+                  )}
+                >
+                  {"Are linen and towels provided?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__njlq6
+                  )}
+                >
+                  {
+                    "Linen and bath towels are provided to all villas. Most villas also provide pool towels \u2013 you have to check the facilities of each individual villa. Beach towels are not provided."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___0J2Fc)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___51Fv
+                  )}
+                >
+                  {"Is the cleaning included in the price?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xPm5J
+                  )}
+                >
+                  {
+                    "Cleaning service \u2013 including change of linen and bath towels \u2013 is included in the price. The service is provided once or twice per week, depending on the villa. You will find more info in the description pages."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__xfhN8)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__vlm1K
+                  )}
+                >
+                  {"What do I do with my rubbish at the property?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ml1PX
+                  )}
+                >
+                  {
+                    "Usually there are bins near the villas; clients are expected to take their rubbish at the in the bins. Please ask the owner on arrival where is the nearest to your villa bin."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__iwpYs)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__iVI4
+                  )}
+                >
+                  {"If I encounter a problem at the property, who do I call?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__b3Ua
+                  )}
+                >
+                  {
+                    "The owner will be always at your disposal, 24/7. If you cannot find the owner, you may call us or send us an email and we will reply as soon as possible."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__qkfE)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__rwFu3
+                  )}
+                >
+                  {"Are there any hidden fees?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__woHtk
+                  )}
+                >
+                  {
+                    "No, there are no hidden fees. Through our site you book without booking or service fee."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__rezJw)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__aArgX
+                  )}
+                >
+                  {"Is it possible to include additional guests later?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__twBuD
+                  )}
+                >
+                  {
+                    "Yes, as long as you are not more than the maximum number of persons that the villa can accommodate. If there is an extra charge per night per guests, it will be added at the rental cost. Keep in mind that we always need to know the final number of guests before your arrival."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__rdDlX)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___6Opzb
+                  )}
+                >
+                  {"Is a security deposit required?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ow7KW
+                  )}
+                >
+                  {
+                    "A security deposit is not required. However, guests are responsible for any loss or damage caused to the property or its contents. Guests are required to report any damage to the owner and to bear the cost of repair or replacement."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__xrjSg)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___1KMiW
+                  )}
+                >
+                  {"How is the payment done?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__fpSxj
+                  )}
+                >
+                  {
+                    "To secure the booking a deposit is required, usually a 25% of the total price. You will find the required deposit amount in each description page. The payment can be made either with credit card online through our site or by bank transfer. When you decide to proceed to the booking of a villa you must send us a confirmation page and we will activate the payment form."
+                  }
+                </div>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__bhIfq)}
+              >
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__hfBLl
+                  )}
+                >
+                  {"Will you send me a reminder when the balance is due?"}
+                </h3>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__j8QOp
+                  )}
+                >
+                  {
+                    "Unfortunately our automated reminder system is not ready yet. If you want in advance, you must contact us at least 22 days before your arrival for the bank account details."
                   }
                 </div>
               </p.Stack>
             ) : null}
           </p.Stack>
+          <HomeCarousel
+            data-plasmic-name={"homeCarousel"}
+            data-plasmic-override={overrides.homeCarousel}
+            className={classNames("__wab_instance", sty.homeCarousel)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -209,8 +764,9 @@ function PlasmicFaqs__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1"],
-  h1: ["h1"]
+  root: ["root", "h1", "homeCarousel"],
+  h1: ["h1"],
+  homeCarousel: ["homeCarousel"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -218,6 +774,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   h1: "h1";
+  homeCarousel: typeof HomeCarousel;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -281,6 +838,7 @@ export const PlasmicFaqs = Object.assign(
   {
     // Helper components rendering sub-elements
     h1: makeNodeComponent("h1"),
+    homeCarousel: makeNodeComponent("homeCarousel"),
 
     // Metadata about props expected for PlasmicFaqs
     internalVariantProps: PlasmicFaqs__VariantProps,
@@ -288,8 +846,9 @@ export const PlasmicFaqs = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
-      description: "",
+      title: "faqs | Chania Rentals",
+      description:
+        "The best way to choose is to let us know what you need and we will help you find the perfect villa for you!",
       ogImageSrc: "",
       canonical: ""
     }
