@@ -425,6 +425,26 @@
           "id": "flYiRJ8GTg3",
           "name": "IconSwimmingPoolIcon",
           "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconSwimmingPool.tsx"
+        },
+        {
+          "id": "cjbw8vk-G",
+          "name": "IconBed2Icon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconBed2.tsx"
+        },
+        {
+          "id": "zsEHQv3X5J",
+          "name": "IconShower2Icon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconShower2.tsx"
+        },
+        {
+          "id": "Tbp1NnMu3M",
+          "name": "IconSwimmingPool2Icon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconSwimmingPool2.tsx"
+        },
+        {
+          "id": "rXEPFX-eXi",
+          "name": "IconAlternateCarIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconAlternateCar.tsx"
         }
       ],
       "images": [

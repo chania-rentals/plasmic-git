@@ -37,22 +37,21 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
-import { useScreenVariants as useScreenVariants_793QbDbnmqZpDb } from "../visitors/PlasmicGlobalVariant__Screen"; // plasmic-import: 793qbDbnmqZPDb/globalVariant
+import { useScreenVariants as useScreenVariantskpUco5Gf8Gxk } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: KPUco5Gf8Gxk/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_visitors_css from "../visitors/plasmic_visitors.module.css"; // plasmic-import: w4yYo48qoeavp6MLu5USrX/projectcss
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_blank_website.module.css"; // plasmic-import: DFSgDk7xEF4uDtL4KTuii/projectcss
 import sty from "./PlasmicVillaListing.module.css"; // plasmic-import: 4IYytJcVf3/css
 
-import IconBed2Icon from "../visitors/icons/PlasmicIcon__IconBed2"; // plasmic-import: Nm0JLxPHf/icon
-import IconUserFriendsIcon from "../visitors/icons/PlasmicIcon__IconUserFriends"; // plasmic-import: caRC1ivz9t/icon
-import IconShower2Icon from "../visitors/icons/PlasmicIcon__IconShower2"; // plasmic-import: krOlpVj1xW/icon
-import IconWiFiIcon from "../visitors/icons/PlasmicIcon__IconWiFi"; // plasmic-import: LIGOAN9qik/icon
-import IconSwimmingPool2Icon from "../visitors/icons/PlasmicIcon__IconSwimmingPool2"; // plasmic-import: FBo7qokeMH/icon
-import IconAlternateCarIcon from "../visitors/icons/PlasmicIcon__IconAlternateCar"; // plasmic-import: evxzZ8huz8/icon
+import IconBed2Icon from "./icons/PlasmicIcon__IconBed2"; // plasmic-import: cjbw8vk-G/icon
+import IconUserFriendsIcon from "./icons/PlasmicIcon__IconUserFriends"; // plasmic-import: 9sEL3AEFEMB/icon
+import IconShower2Icon from "./icons/PlasmicIcon__IconShower2"; // plasmic-import: zsEHQv3X5J/icon
+import IconWiFiIcon from "./icons/PlasmicIcon__IconWiFi"; // plasmic-import: glh44mfmuWC/icon
+import IconSwimmingPool2Icon from "./icons/PlasmicIcon__IconSwimmingPool2"; // plasmic-import: Tbp1NnMu3M/icon
+import IconAlternateCarIcon from "./icons/PlasmicIcon__IconAlternateCar"; // plasmic-import: rXEPFX-eXi/icon
 
 export type PlasmicVillaListing__VariantMembers = {
   withPrice: "withPrice";
@@ -177,7 +176,7 @@ function PlasmicVillaListing__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_793QbDbnmqZpDb()
+    screen: useScreenVariantskpUco5Gf8Gxk()
   });
 
   return (
@@ -193,7 +192,6 @@ function PlasmicVillaListing__RenderFunc(props: {
           projectcss.plasmic_default_styles,
           projectcss.plasmic_mixins,
           projectcss.plasmic_tokens,
-          plasmic_visitors_css.plasmic_tokens,
           plasmic_antd_5_hostless_css.plasmic_tokens,
           plasmic_plasmic_rich_components_css.plasmic_tokens,
           sty.root
