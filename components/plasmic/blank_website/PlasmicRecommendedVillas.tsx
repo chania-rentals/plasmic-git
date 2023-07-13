@@ -52,6 +52,8 @@ import IconShowerIcon from "./icons/PlasmicIcon__IconShower"; // plasmic-import:
 import IconWiFiIcon from "./icons/PlasmicIcon__IconWiFi"; // plasmic-import: glh44mfmuWC/icon
 import IconSwimmingPoolIcon from "./icons/PlasmicIcon__IconSwimmingPool"; // plasmic-import: flYiRJ8GTg3/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicRecommendedVillas__VariantMembers = {};
 export type PlasmicRecommendedVillas__VariantsArgs = {};
 type VariantPropType = keyof PlasmicRecommendedVillas__VariantsArgs;
@@ -130,6 +132,7 @@ function PlasmicRecommendedVillas__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -1021,7 +1024,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   frame15: "div";

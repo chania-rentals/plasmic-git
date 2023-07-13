@@ -45,6 +45,8 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_blank_website.module.css"; // plasmic-import: DFSgDk7xEF4uDtL4KTuii/projectcss
 import sty from "./PlasmicFaqs.module.css"; // plasmic-import: jJomJF1Hmf/css
 
+createPlasmicElementProxy;
+
 export type PlasmicFaqs__VariantMembers = {};
 export type PlasmicFaqs__VariantsArgs = {};
 type VariantPropType = keyof PlasmicFaqs__VariantsArgs;
@@ -88,6 +90,7 @@ function PlasmicFaqs__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -768,7 +771,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   h1: "h1";

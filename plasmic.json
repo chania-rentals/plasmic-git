@@ -383,6 +383,33 @@
           "cssFilePath": "plasmic/blank_website/PlasmicVillaListing.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "TwTW5fxDVI",
+          "name": "ReviewSlide",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicReviewSlide.tsx",
+          "importSpec": {
+            "modulePath": "ReviewSlide.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicReviewSlide.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "b2XL0IwiA6k",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "DFSgDk7xEF4uDtL4KTuii",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -445,6 +472,16 @@
           "id": "rXEPFX-eXi",
           "name": "IconAlternateCarIcon",
           "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__IconAlternateCar.tsx"
+        },
+        {
+          "id": "77ZuBP6z4AB",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "yHBPIo_yd_O",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/blank_website/icons/PlasmicIcon__Icon.tsx"
         }
       ],
       "images": [
@@ -494,6 +531,12 @@
           "name": "HomeCarousel",
           "displayName": "HomeCarousel",
           "componentImportPath": "@/components/HomeCarousel"
+        },
+        {
+          "id": "6CXQJNVPL2",
+          "name": "ReviewsCarousel",
+          "displayName": "ReviewsCarousel",
+          "componentImportPath": "@/components/ReviewsCarousel"
         }
       ]
     },
@@ -774,6 +817,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.295",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.295/dist/plasmic.schema.json"
+  "cliVersion": "0.1.300",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.300/dist/plasmic.schema.json"
 }

@@ -50,6 +50,8 @@ import PaperPlaneSvgrepoComsvgIcon from "./icons/PlasmicIcon__PaperPlaneSvgrepoC
 import EmailSvgrepoComsvgIcon from "./icons/PlasmicIcon__EmailSvgrepoComsvg"; // plasmic-import: vQL0a9Pgx6p/icon
 import PhoneSvgrepoComsvgIcon from "./icons/PlasmicIcon__PhoneSvgrepoComsvg"; // plasmic-import: fD3byLmk8P8/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicFooter__VariantMembers = {};
 export type PlasmicFooter__VariantsArgs = {};
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;
@@ -96,6 +98,7 @@ function PlasmicFooter__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -428,7 +431,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   mail: "svg";

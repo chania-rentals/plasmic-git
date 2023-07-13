@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   PlasmicButton,
   DefaultButtonProps
-} from "./plasmic/visitors/PlasmicButton";
+} from "./plasmic/blank_website/PlasmicButton";
 import {
   ButtonRef,
   HtmlAnchorOnlyProps,

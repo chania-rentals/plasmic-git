@@ -38,6 +38,7 @@ import {
 } from "@plasmicapp/react-web";
 import { HomeCarousel } from "@/components/HomeCarousel"; // plasmic-import: qqFdwPcNt8/codeComponent
 import RecommendedVillas from "../../RecommendedVillas"; // plasmic-import: HBIlN8IHFlq/component
+import { ReviewsCarousel } from "@/components/ReviewsCarousel"; // plasmic-import: 6CXQJNVPL2/codeComponent
 import ExtraServices from "../../ExtraServices"; // plasmic-import: nSt5TCeTKDE/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -46,6 +47,8 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostl
 import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plasmic_plasmic_rich_components.module.css"; // plasmic-import: jkU633o1Cz7HrJdwdxhVHk/projectcss
 import projectcss from "./plasmic_blank_website.module.css"; // plasmic-import: DFSgDk7xEF4uDtL4KTuii/projectcss
 import sty from "./PlasmicIndex.module.css"; // plasmic-import: 6Hg4UVKwGM/css
+
+createPlasmicElementProxy;
 
 export type PlasmicIndex__VariantMembers = {};
 export type PlasmicIndex__VariantsArgs = {};
@@ -61,6 +64,8 @@ export type PlasmicIndex__OverridesType = {
   freeBox?: p.Flex<"div">;
   homeCarousel?: p.Flex<typeof HomeCarousel>;
   recommendedVillas?: p.Flex<typeof RecommendedVillas>;
+  reviewsCarousel?: p.Flex<typeof ReviewsCarousel>;
+  h1?: p.Flex<"h1">;
   extraServices?: p.Flex<typeof ExtraServices>;
 };
 
@@ -92,6 +97,7 @@ function PlasmicIndex__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -178,6 +184,24 @@ function PlasmicIndex__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.recommendedVillas)}
               />
 
+              <ReviewsCarousel
+                data-plasmic-name={"reviewsCarousel"}
+                data-plasmic-override={overrides.reviewsCarousel}
+                className={classNames("__wab_instance", sty.reviewsCarousel)}
+              >
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1
+                  )}
+                >
+                  {"Customer reviews"}
+                </h1>
+              </ReviewsCarousel>
               <ExtraServices
                 data-plasmic-name={"extraServices"}
                 data-plasmic-override={overrides.extraServices}
@@ -197,21 +221,34 @@ const PlasmicDescendants = {
     "freeBox",
     "homeCarousel",
     "recommendedVillas",
+    "reviewsCarousel",
+    "h1",
     "extraServices"
   ],
-  freeBox: ["freeBox", "homeCarousel", "recommendedVillas", "extraServices"],
+  freeBox: [
+    "freeBox",
+    "homeCarousel",
+    "recommendedVillas",
+    "reviewsCarousel",
+    "h1",
+    "extraServices"
+  ],
   homeCarousel: ["homeCarousel"],
   recommendedVillas: ["recommendedVillas"],
+  reviewsCarousel: ["reviewsCarousel", "h1"],
+  h1: ["h1"],
   extraServices: ["extraServices"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   freeBox: "div";
   homeCarousel: typeof HomeCarousel;
   recommendedVillas: typeof RecommendedVillas;
+  reviewsCarousel: typeof ReviewsCarousel;
+  h1: "h1";
   extraServices: typeof ExtraServices;
 };
 
@@ -278,6 +315,8 @@ export const PlasmicIndex = Object.assign(
     freeBox: makeNodeComponent("freeBox"),
     homeCarousel: makeNodeComponent("homeCarousel"),
     recommendedVillas: makeNodeComponent("recommendedVillas"),
+    reviewsCarousel: makeNodeComponent("reviewsCarousel"),
+    h1: makeNodeComponent("h1"),
     extraServices: makeNodeComponent("extraServices"),
 
     // Metadata about props expected for PlasmicIndex

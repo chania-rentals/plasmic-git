@@ -44,6 +44,8 @@ import plasmic_plasmic_rich_components_css from "../plasmic_rich_components/plas
 import projectcss from "./plasmic_blank_website.module.css"; // plasmic-import: DFSgDk7xEF4uDtL4KTuii/projectcss
 import sty from "./PlasmicHowToBook.module.css"; // plasmic-import: mfkTZPVpA-/css
 
+createPlasmicElementProxy;
+
 export type PlasmicHowToBook__VariantMembers = {};
 export type PlasmicHowToBook__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHowToBook__VariantsArgs;
@@ -86,6 +88,7 @@ function PlasmicHowToBook__RenderFunc(props: {
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+
   const $props = {
     ...args,
     ...variants
@@ -327,7 +330,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   h1: "h1";

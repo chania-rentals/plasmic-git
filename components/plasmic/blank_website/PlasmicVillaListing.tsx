@@ -53,6 +53,8 @@ import IconWiFiIcon from "./icons/PlasmicIcon__IconWiFi"; // plasmic-import: glh
 import IconSwimmingPool2Icon from "./icons/PlasmicIcon__IconSwimmingPool2"; // plasmic-import: Tbp1NnMu3M/icon
 import IconAlternateCarIcon from "./icons/PlasmicIcon__IconAlternateCar"; // plasmic-import: rXEPFX-eXi/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicVillaListing__VariantMembers = {
   withPrice: "withPrice";
 };
@@ -146,6 +148,7 @@ function PlasmicVillaListing__RenderFunc(props: {
       ),
     [props.args]
   );
+
   const $props = {
     ...args,
     ...variants
@@ -1008,7 +1011,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   container: "div";
